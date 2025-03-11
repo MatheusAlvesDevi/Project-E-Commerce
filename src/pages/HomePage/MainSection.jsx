@@ -1,8 +1,11 @@
+import ProductsContainer from "../ProductsContainer";
+import ProductsFilters from "./ProductsFilters";
+
 const MainSection = () => {
     return (
         <>
-            <h1>Filtros</h1>
-            <h1>Container de produtos</h1>
+            <ProductsFilters   />
+            <ProductsContainer />
         </>
 
     );
