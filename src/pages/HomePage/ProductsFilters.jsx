@@ -1,6 +1,6 @@
 
 
-const ProductsFilters = () => {
+const ProductsFilters = ({setFemaleProduct}) => {
     return (
         <section className="flex justify-center item-center py-8"> 
             <input id="filter-0"
@@ -13,7 +13,8 @@ const ProductsFilters = () => {
             hover:bg-slate-800 
             p-2 text-sm 
             text-slate-100 
-            cursor-pointer">Todos</label>
+            cursor-pointer">Todos
+            </label>
             <input id="filter-1" 
             type="radio" 
             name="filter-selection" 
@@ -23,7 +24,10 @@ const ProductsFilters = () => {
             hover:bg-slate-800 
             p-2 text-sm 
             text-slate-100 
-            cursor-pointer">Masculino</label>
+            cursor-pointer"
+            onClick={() => setFemaleProduct(false)}>
+            Masculino
+            </label>
             <input id="filter-2" 
             type="radio" 
             name="filter-selection" 
@@ -35,7 +39,10 @@ const ProductsFilters = () => {
             hover:bg-slate-800 
             p-2 text-sm 
             text-slate-100 
-            cursor-pointer">Feminino</label>
+            cursor-pointer"
+            onClick={() => setFemaleProduct(true)}>
+            Feminino
+            </label>
         </section>
     );
 };

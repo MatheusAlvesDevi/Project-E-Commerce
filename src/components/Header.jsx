@@ -1,4 +1,4 @@
-import logo from '../../src/assets/logo/hashtag.svg';
+import logo from '../../src/assets/logo/logo.jpeg';
 import UserBotton from './UserButton';
 import { useLocation, Link} from 'react-router-dom';
 
@@ -7,7 +7,7 @@ const Header = () => {
     const completeHeader = (
         <header className='flex text-xl sticky top-0 shadow-xl shadow-slate-400 bg-slate-950 text-slate-200 px-8 py-4 items-end justify-between z-10'>
             <Link to="/">
-            <img className='h-16 px-2' src={logo} alt="Logo do site" />
+            <img className='h-16 w-16 px-2' src={logo} alt="Logo do site" />
             </Link>
             <UserBotton />
         </header>

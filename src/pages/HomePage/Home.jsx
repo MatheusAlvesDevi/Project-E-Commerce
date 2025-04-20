@@ -1,3 +1,4 @@
+import { useState } from "react";
 import CartOverlay from "../../components/Cart/CartOverlay";
 import MainSection from "./MainSection";
 
