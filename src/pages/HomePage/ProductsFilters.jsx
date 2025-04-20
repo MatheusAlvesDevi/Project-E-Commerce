@@ -6,7 +6,8 @@ const ProductsFilters = ({setFemaleProduct}) => {
             <input id="filter-0"
              type="radio"
               name="filter-selection" 
-              className="hidden" />
+              className="hidden"
+              onClick={() => setFemaleProduct(null)} />
             <label htmlFor="filter-0" 
             className="rounded-s-lg 
             bg-slate-950 
