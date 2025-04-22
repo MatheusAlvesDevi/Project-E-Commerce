@@ -1,11 +1,10 @@
-import { useContext, useState } from "react";
-import { CartContext, getAmountCartOfItemsInCart } from "../contexts/CartContext";
+import { useCartContext, getAmountCartOfItemsInCart } from "../contexts/CartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBagShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const UserBotton = () => {
-    const {toggleIsCartOpen, cartItems} = useContext(CartContext);
+    const {toggleIsCartOpen, cartItems} = useCartContext();
     
     const amountOfItems = getAmountCartOfItemsInCart(cartItems);
     return (

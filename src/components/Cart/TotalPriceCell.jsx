@@ -1,5 +1,4 @@
-import { CartContext } from "../../contexts/CartContext";
-import {useContext } from "react";
+import { useCartContext } from "../../contexts/CartContext";
 import { catalogIndexById } from "../../utils/catalog";
 
 function calculateTotalPrice (cartObject) {
@@ -11,7 +10,7 @@ function calculateTotalPrice (cartObject) {
 }
 
 const TotalPriceCell = () => {
-    const {cartItems} = useContext(CartContext)
+    const {cartItems} = useCartContext()
     const totalPrice = calculateTotalPrice(cartItems)
     return (
         <section className="flex bg-slate-100 p-1 text-green-700 rounded-md justify-evenly ">
