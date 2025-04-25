@@ -3,7 +3,7 @@ import UserBotton from './UserButton';
 import { useLocation, Link} from 'react-router-dom';
 
 const Header = () => {
-    const {pathname} = useLocation().pathname;
+    const {pathname} = useLocation().pathname
     const completeHeader = (
         <header className='flex text-xl sticky top-0 shadow-xl shadow-slate-400 bg-slate-950 text-slate-200 px-8 py-4 items-end justify-between z-10'>
             <Link to="/">
@@ -20,10 +20,10 @@ const Header = () => {
             </Link>
             <UserBotton />
         </header>
-    );
+    )
     return(
         <>
-            {pathname === "/" ? completeHeader : simpleHeader};
+            {pathname === "/" ? completeHeader : simpleHeader}
         </>
     );
 };
